@@ -1,0 +1,137 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  width: 600px;
+  height: 800px;
+  margin: 0 auto; /* Center the content horizontally */
+  background-color: #222222; /* Light background color */
+  color: #333333; /* Light text color */
+  border-radius: 20px;
+}
+
+/* Media query for mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .App {
+    width: 300px; /* Half the width for mobile */
+    height: 400px; /* Half the height for mobile */
+  }
+}
+
+
+.intro-screen {
+  background-color: #f0f0f0; /* Light background color for intro screen */
+}
+
+.quiz-screen {
+
+  width: 300px; 
+  height: 400px; 
+
+ 
+  padding: 20px; 
+
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Dark Mode Styles (overrides) */
+.App.dark {
+  background-color: #333333; /* Dark background color */
+  color: #ffffff; /* Dark text color */
+}
+
+.button {
+  padding: 10 15px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: gold;
+  color: black !important;
+}
+
+.button:hover {
+  color: rgb(175, 0, 175)!important;
+}
+
+.screen {
+ margin: 20px;
+ margin-top: 20px;
+ position: absolute;
+}
+
+.screen-container {
+  border-radius: 20px;
+  background-color: #222222;
+  border:solid 5px gold;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-screen {
+  width: 400px;
+  height: auto;
+  padding-left: 20px;
+}
+
+.intro-screen {
+  height: 25vh;
+}
+
+.begin-button {
+  transform: translateY(150px);
+}
+
+.quiz-button {
+  transform: translateY(150px);
+}
+
+.header {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* .results-screen {
+  transform: translate(1000px 0);
+} */
